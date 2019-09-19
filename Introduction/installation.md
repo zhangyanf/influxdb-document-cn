@@ -11,7 +11,7 @@ InfluxDB默认使用下面的网络端口：
 * TCP端口`8086`用作InfluxDB的客户端和服务端的http api通信
 * TCP端口`8088`给备份和恢复数据的RPC服务使用
 
-另外，InfluxDB也提供了多个可能需要自定义端口的插件，所以的端口映射都可以通过配置文件修改，对于默认安装的InfluxDB，这个配置文件位于`/etc/influxdb/influxdb.conf`。
+另外，InfluxDB也提供了多个可能需要自定义端口的插件，所有的端口映射都可以通过配置文件修改，对于默认安装的InfluxDB，这个配置文件位于`/etc/influxdb/influxdb.conf`。
 
 ### NTP
 InfluxDB使用服务器本地时间给数据加时间戳，而且是UTC时区的。并使用NTP来同步服务器之间的时间，如果服务器的时钟没有通过NTP同步，那么写入InfluxDB的数据的时间戳就可能不准确。
